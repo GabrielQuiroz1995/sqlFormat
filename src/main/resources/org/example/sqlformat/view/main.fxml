@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox fx:id="layout" fx:controller="org.example.sqlformat.view.SqlViewController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TextArea fx:id="inputArea" promptText="Ingresa el codigo SQL aqui..." prefHeight="150"/>
+    <HBox spacing="10">
+        <Button text="SQL en una línea" onAction="#handleMinifySQL"/>
+        <Button fx:id="parrafoButton" text="SQL en Párrafos" onAction="#handleFormatSQL"/>
+        <Button fx:id="productionButton" text="SQL Producción" onAction="#handleProductionSQL"/>
+        <Button fx:id="copyButton" text="Copiar" onAction="#handleCopy"/>
+        <Button fx:id="clearButton" text="Limpiar" onAction="#handleClear"/>
+    </HBox>
+    <TextArea fx:id="outputArea" promptText="Query formateada aqui..." prefHeight="150" editable="false"/>
+    <CheckBox fx:id="darkModeCheckBox" text="Modo Oscuro" onAction="#handleToggleDarkMode"/>
+</VBox>
