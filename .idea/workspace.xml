@@ -9,7 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16425377-edfc-42ad-9783-146f88fdd7d5" name="Changes" comment="" />
+    <list default="true" id="16425377-edfc-42ad-9783-146f88fdd7d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0379ec45eecf654e504feace696e02786cb25d02" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0379ec45eecf654e504feace696e02786cb25d02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c099e3e7c05209d31077628e2ad8a1e54a978f9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c099e3e7c05209d31077628e2ad8a1e54a978f9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f7b4c15462d675c14522370910e02fe7db6b197" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f7b4c15462d675c14522370910e02fe7db6b197" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/SqlFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/SqlFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/model/SqlModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/model/SqlModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/view/SqlViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/view/SqlViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/viewmodel/SqlViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sqlformat/viewmodel/SqlViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/sqlformat/view/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/sqlformat/view/main.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +35,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -38,18 +54,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.SqlFormat.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SqlFormat.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T017760/Desktop/Trabajo/apis/quarkus/lite/put-fdb-injection-lite-quote-bts-qks-jav&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SqlFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sqlformat.SqlFormat" />

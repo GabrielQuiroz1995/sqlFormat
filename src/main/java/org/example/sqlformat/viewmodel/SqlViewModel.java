@@ -29,4 +29,11 @@ public class SqlViewModel {
     public void clearSQL() {
         model.clearSQL();
     }
+
+    public void formatJson() {
+        model.formatJson();
+    }
+    public void generateDropProcedure() {
+        model.generateDropProcedure();
+    }
 }

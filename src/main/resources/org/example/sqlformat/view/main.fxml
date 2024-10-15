@@ -17,6 +17,8 @@
         <Button text="SQL en una línea" onAction="#handleMinifySQL"/>
         <Button fx:id="parrafoButton" text="SQL en Párrafos" onAction="#handleFormatSQL"/>
         <Button fx:id="productionButton" text="SQL Producción" onAction="#handleProductionSQL"/>
+        <Button fx:id="btnFormatJson" text="JSON a String" />
+        <Button fx:id="btnGenerateDropProcedure" text="Generar DROP PROCEDURE" onAction="#handleGenerateDropProcedure"/>
         <Button fx:id="copyButton" text="Copiar" onAction="#handleCopy"/>
         <Button fx:id="clearButton" text="Limpiar" onAction="#handleClear"/>
     </HBox>

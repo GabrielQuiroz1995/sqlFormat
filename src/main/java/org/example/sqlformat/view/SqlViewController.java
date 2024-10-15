@@ -13,7 +13,6 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
-import javafx.scene.control.Tooltip;
 
 public class SqlViewController {
     private final SqlViewModel viewModel = new SqlViewModel();
@@ -34,20 +33,30 @@ public class SqlViewController {
     private Button parrafoButton;
     @FXML
     private Button clearButton;
+    @FXML
+    private Button btnFormatJson;
 
     @FXML
     public void initialize() {
         inputArea.textProperty().bindBidirectional(viewModel.inputSQLProperty());
         outputArea.textProperty().bind(viewModel.formattedSQLProperty());
 
+        btnFormatJson.setOnAction(event -> {
+            viewModel.formatJson(); // Llama al método en el ViewModel
+        });
+
         // Seleccionar el modo oscuro por defecto
         darkModeCheckBox.setSelected(true);
         setDarkMode(); // Aplicar el estilo de modo oscuro
+
+        copyButton.setStyle("-fx-background-color: #007BFF; -fx-text-fill: white;");
+        clearButton.setStyle("-fx-background-color: #D9534F; -fx-text-fill: white;");
 
         TooltipConfigurer.configure(productionButton, "Se agregan los DELIMITER $$, se borra DEFINER y se eliminan los comentarios");
         TooltipConfigurer.configure(parrafoButton, "Recuerda agregar 'IN' a los campos de entrada del SP");
         TooltipConfigurer.configure(copyButton, "Copiar el SQL formateado al portapapeles");
         TooltipConfigurer.configure(clearButton, "Limpiar los campos de entrada y salida");
+        TooltipConfigurer.configure(btnFormatJson, "Transforma un objeto JSON a un texto plano");
     }
 
     @FXML
@@ -95,6 +104,11 @@ public class SqlViewController {
             setLightMode();
         }
     }
+
+    public void handleGenerateDropProcedure() {
+        viewModel.generateDropProcedure();
+    }
+
 
     private void setDarkMode() {
         layout.setStyle("-fx-background-color: darkslategray;");
