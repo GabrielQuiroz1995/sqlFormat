@@ -1,5 +1,6 @@
 package org.example.sqlformat.view;
 
+import javafx.scene.layout.HBox;
 import org.example.sqlformat.util.TooltipConfigurer;
 import org.example.sqlformat.viewmodel.SqlViewModel;
 import javafx.fxml.FXML;
@@ -8,7 +9,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
-import javafx.scene.layout.VBox;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -24,7 +24,7 @@ public class SqlViewController {
     @FXML
     private CheckBox darkModeCheckBox;
     @FXML
-    private VBox layout;
+    private HBox layout;
     @FXML
     private Button copyButton;
     @FXML
@@ -35,6 +35,8 @@ public class SqlViewController {
     private Button clearButton;
     @FXML
     private Button btnFormatJson;
+    @FXML
+    private Button btnGenerateDropProcedure;
 
     @FXML
     public void initialize() {
@@ -57,6 +59,7 @@ public class SqlViewController {
         TooltipConfigurer.configure(copyButton, "Copiar el SQL formateado al portapapeles");
         TooltipConfigurer.configure(clearButton, "Limpiar los campos de entrada y salida");
         TooltipConfigurer.configure(btnFormatJson, "Transforma un objeto JSON a un texto plano");
+        TooltipConfigurer.configure(btnGenerateDropProcedure, "Crear los DROP de los SP copiados");
     }
 
     @FXML

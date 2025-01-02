@@ -7,21 +7,28 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 
-<VBox fx:id="layout" fx:controller="org.example.sqlformat.view.SqlViewController"
+<HBox fx:id="layout" fx:controller="org.example.sqlformat.view.SqlViewController"
       xmlns:fx="http://javafx.com/fxml" spacing="10">
     <padding>
         <Insets top="10" right="10" bottom="10" left="10"/>
     </padding>
-    <TextArea fx:id="inputArea" promptText="Ingresa el codigo SQL aqui..." prefHeight="150"/>
-    <HBox spacing="10">
-        <Button text="SQL en una línea" onAction="#handleMinifySQL"/>
-        <Button fx:id="parrafoButton" text="SQL en Párrafos" onAction="#handleFormatSQL"/>
-        <Button fx:id="productionButton" text="SQL Producción" onAction="#handleProductionSQL"/>
-        <Button fx:id="btnFormatJson" text="JSON a String" />
-        <Button fx:id="btnGenerateDropProcedure" text="Generar DROP PROCEDURE" onAction="#handleGenerateDropProcedure"/>
-        <Button fx:id="copyButton" text="Copiar" onAction="#handleCopy"/>
-        <Button fx:id="clearButton" text="Limpiar" onAction="#handleClear"/>
-    </HBox>
-    <TextArea fx:id="outputArea" promptText="Query formateada aqui..." prefHeight="150" editable="false"/>
-    <CheckBox fx:id="darkModeCheckBox" text="Modo Oscuro" onAction="#handleToggleDarkMode"/>
-</VBox>
+
+    <!-- VBox para los botones a la izquierda -->
+    <VBox spacing="10">
+        <Button text="SQL en una línea" prefWidth="160" onAction="#handleMinifySQL"/>
+        <Button fx:id="parrafoButton" prefWidth="160" text="SQL en Párrafos" onAction="#handleFormatSQL"/>
+        <Button fx:id="productionButton" prefWidth="160" text="SQL Producción" onAction="#handleProductionSQL"/>
+        <Button fx:id="btnFormatJson" prefWidth="160" text="JSON a String"/>
+        <Button fx:id="btnGenerateDropProcedure" prefWidth="160" text="DROP PROCEDURE" onAction="#handleGenerateDropProcedure"/>
+        <Button fx:id="copyButton" text="Copiar" prefWidth="160" onAction="#handleCopy"/>
+        <Button fx:id="clearButton" text="Limpiar" prefWidth="160" onAction="#handleClear"/>
+        <CheckBox fx:id="darkModeCheckBox" prefWidth="160" text="Modo Oscuro" onAction="#handleToggleDarkMode"/>
+    </VBox>
+
+    <!-- VBox para los TextArea a la derecha -->
+    <VBox spacing="10" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+        <TextArea fx:id="inputArea" promptText="Ingresa el código SQL aquí..."/>
+        <TextArea fx:id="outputArea" promptText="Query formateada aquí..." editable="false" VBox.vgrow="ALWAYS"/>
+    </VBox>
+</HBox>
+
